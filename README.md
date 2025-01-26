@@ -7,7 +7,7 @@ We introduce this endpoint located at http://ai.xetute.com/v1 to enable startups
 
 ## Privacy
 Your inputs, or thouse of your users, don't get logged, saved or similar which would enable anyone from our side to see your prompt and our model's generation, including ourselves.<br>
-It is, however, still without your ability to save the inputs and generations, but you have to implement that into your application yourself.
+It is, however, still within your ability to save the inputs and generations, but you have to implement that into your application yourself.
 
 ## License
 The model being served is not Open-Source. It was trained using a currently non-open-source version of HANNA, both the LLM and the framework's closed version are highly experimental, but the LLM can be used in producation enviroments already.<br>
