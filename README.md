@@ -1,71 +1,28 @@
-# 你好，朋友 | ہیلو، دوست
+# Hello, Friend
+This is a free of charge and authorisation LLM endpoint which complies with the OpenAI API standard.
 
-## 🇨🇳 | MANDARIN (中文)
-> 由 XeTute Technologies 提供的免费 LLM 接口，可用于文本生成、对话等功能。
+## Why
+When we, XeTute Technologies, were a company with more limited resources than we have now, it was very hard to serve all of our users LLM-powered applications which were fast and of good quality.<br>
+We introduce this endpoint located at http://ai.xetute.com/v1 to enable startups, small companies and even private people specifically in the Islamic Federal Republic of Pakistan and the People's Republic of China to serve / use our flagship LLM model free of charge.<br>
 
-### 性能
-我们的服务器平均能够：
-- 每秒生成 6 TPS（每秒生成的令牌数，基于完整上下文长度生成 100 个令牌，结果不保证）
-- 每秒处理 8192 个令牌（等于 1024 * 8）
+## Privacy
+Your inputs, or thouse of your users, don't get logged, saved or similar which would enable anyone from our side to see your prompt and our model's generation, including ourselves.<br>
+It is, however, still without your ability to save the inputs and generations, but you have to implement that into your application yourself.
 
-服务器负载可能会影响生成响应所需的时间，但通常处理整个上下文长度并生成 256 个令牌的输出需要大约 15 秒。
+## License
+The model being served is not Open-Source. It was trained using a currently non-open-source version of HANNA, both the LLM and the framework's closed version are highly experimental, but the LLM can be used in producation enviroments already.<br>
+The generations of the model belong to you, or if you're serving the model through your application, either you or the user generation those—it's entirely your decision to make.
 
-### 限制
-请求的限制为：
-- 最大上下文长度：8192 个令牌
-- 最大生成长度：256 个令牌  
-如果您的请求超出这些限制，将自动调整至允许的最大值。  
-若未指定任何限制，也会使用最大值。
+## Capabilities
+Our current endpoint supports a context length of up to 8 * 1024 \ 8k \ 8192. Your input gets queued if there are requests already being processed, which may influence generation times.<br>
+A generation using the full context window and 100 tokens being generated will take around five seconds if no requests are being processed before yours. Currently, the maximum amount of time it ever took to generate was well under 20 seconds.
 
-### 功能端点
-您可以通过以下端点访问服务：
-- https://ai.xetute.com/ || APEX，显示 KoboldAI Web UI
-- https://ai.xetute.com/v1 || OpenAI 兼容端点（支持 `/completions`、`/chat/completions` 和 `/models`）
+## Endpoints
+The model is hosted using KoboldCPP, which also allows you to use a webUI before including the endpoint in your project.
+- WebUI: https://ai.xetute.com/
+- KoboldAI-Compatible endpoint: https://ai.xetute.cmom/api/
+- OpenAI-Compatible endpoint: https://ai.xetute.com/v1/ (most commonly used: https://ai.xetute.com/v1/chat/completions)
 
-我们使用 [Qwen2.5-7B finetune 'HomerMix'](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) 提供服务，由中国公司 Deepseek 提供并遵循 Apache2.0 许可证。
-
-### 模型压缩
-模型推理使用 INT4 进行优化。
-
-### 隐私
-我们的服务器不会保存任何输入或输出数据。
-
-### 费用与版权
-我们不收取任何费用。提供的端点完全免费，您可自由在您的应用程序中使用，无需通知我们。  
-如果您希望支持我们，可以通过 [Ko-Fi](https://ko-fi.com/XeTute) 捐赠，帮助我们继续免费提供服务。
-
----
-
-## 🇵🇰 | URDU (اردو)
-> XeTute Technologies کی جانب سے فراہم کردہ ایک مفت LLM اینڈپوائنٹ، جو متن تیار کرنے، بات چیت کرنے، اور دیگر کاموں کے لیے دستیاب ہے۔
-
-### کارکردگی
-ہمارے سرور کی اوسط کارکردگی:
-- 6 TPS (ٹوکنز فی سیکنڈ، مکمل سیاق و سباق کے ساتھ 100 ٹوکنز پیدا کرنے پر، اس کی ضمانت نہیں دی جاتی)
-- ہر سیکنڈ میں 8192 ٹوکنز (یعنی 1024 * 8) پروسیس کرنے کی صلاحیت
-
-سرور کی مصروفیت آپ کی درخواست کے جواب کے وقت کو متاثر کر سکتی ہے، لیکن عام طور پر پورے سیاق و سباق پر مبنی درخواست کو مکمل کرنے اور 256 ٹوکنز کا آؤٹ پٹ تیار کرنے میں تقریباً 15 سیکنڈ لگتے ہیں۔
-
-### حدود
-درخواستوں کے لیے درج ذیل حدود مقرر ہیں:
-- زیادہ سے زیادہ سیاق و سباق کی لمبائی: 8192 ٹوکنز
-- زیادہ سے زیادہ آؤٹ پٹ کی لمبائی: 256 ٹوکنز  
-اگر آپ کی درخواست ان حدود سے تجاوز کرے گی، تو خود بخود زیادہ سے زیادہ اجازت شدہ حد پر سیٹ کر دی جائے گی۔  
-اگر آپ کی درخواست میں کوئی حد مقرر نہیں، تو بھی زیادہ سے زیادہ حدود لاگو ہوں گی۔
-
-### فعالیت کے اینڈپوائنٹس
-خدمات درج ذیل اینڈپوائنٹس پر دستیاب ہیں:
-- https://ai.xetute.com/ || APEX، جو KoboldAI ویب UI دکھاتا ہے
-- https://ai.xetute.com/v1 || OpenAI کے ہم آہنگ اینڈپوائنٹ (صرف `/completions`، `/chat/completions` اور `/models` کے لیے دستیاب)
-
-ماڈل [Qwen2.5-7B finetune 'HomerMix'](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) استعمال کیا گیا ہے، جو چینی کمپنی Deepseek کی فراہم کردہ ہے اور Apache2.0 لائسنس کے تحت دستیاب ہے۔
-
-### ماڈل کمپریشن
-ماڈل کو INT4 کا استعمال کرتے ہوئے بہتر بنایا گیا ہے۔
-
-### رازداری
-ہمارے سرورز کسی بھی ان پٹ یا آؤٹ پٹ کو محفوظ نہیں کرتے۔
-
-### بلنگ اور کاپی رائٹ
-ہماری خدمات بالکل مفت ہیں، اور آپ انہیں اپنے ایپلیکیشنز میں بلا جھجک استعمال کر سکتے ہیں۔ ہمیں مطلع کرنے کی ضرورت نہیں ہے۔  
-اگر آپ ہماری مدد کرنا چاہتے ہیں، تو براہِ کرم [Ko-Fi](https://ko-fi.com/XeTute) پر عطیات دے کر ہمارا ساتھ دیں تاکہ ہم اپنی خدمات مفت جاری رکھ سکیں۔
+## Support
+You can support us by spreading word about our new service, [https://xetute.com/PhantasiaAI], using it yourself, or through [https://ko-fi.com/xetute](Ko-Fi).<br>
+Long live the Islamic Federal Republic of Pakistan. Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
