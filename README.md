@@ -14,7 +14,7 @@ Your inputs, and those of your users, are never logged, saved, or monitored by u
 If you wish to save inputs and outputs, you must implement that functionality yourself in your application.
 
 ## License
-The model being served is **[Magnum V2 4B](https://huggingface.co/anthracite-org/magnum-v2-4b-gguf)**, licensed under **Apache 2.0**. It is an efficient, production-ready LLM optimized using INT8 / Q8 compression. While the model has been adapted for fast inference and resource efficiency, it retains high-quality performance for various applications.
+The model being served is **[Magnum V4 9B](https://huggingface.co/anthracite-org/magnum-v4-9b-gguf)**, licensed under **the Gemma license**. It is an efficient, production-ready LLM optimized using INT4 / Q4 compression. While the model has been adapted for fast inference and resource efficiency, it retains high-quality performance for various applications.
 
 All generations from the model belong to you. If you are serving the model through your application, the ownership of generations can be decided by you or your users.
 
@@ -38,4 +38,5 @@ Check out our roleplaying Webapplication **[PhantasiaAI](https://xetute.com/Phan
 
 ---
 
-Long live the Islamic Federal Republic of Pakistan. Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
+Long live the Islamic Federal Republic of Pakistan.<br>
+Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
