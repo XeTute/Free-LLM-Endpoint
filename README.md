@@ -6,7 +6,7 @@ Try out PhantasiaAI [here](https://xetute.com/PhantasiaAI).
 ## Why
 At XeTute Technologies, we understand the challenges of serving high-quality, fast LLM-powered applications with limited resources. When we were a smaller company, this was especially difficult.
 
-To address this, we are introducing this endpoint, available at **http://ai.xetute.com/v1**, to support startups, small companies, and private individuals—particularly in the Islamic Federal Republic of Pakistan and the People's Republic of China. Our goal is to provide access to our flagship LLM model free of charge, enabling you to build and serve applications with ease.
+To address this, we are introducing this endpoint, available at **http://ai.xetute.com/v1**, to support startups, small companies, and private individuals—particularly in the Islamic Federal Republic of Pakistan and the People's Republic of China. Our goal is to provide access to a high-quality LLM model free of charge, enabling you to build and serve applications with ease.
 
 ## Privacy
 Your inputs, and those of your users, are never logged, saved, or monitored by us. This ensures that no one, including ourselves, can access your prompts or the model's generations.
