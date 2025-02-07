@@ -1,7 +1,11 @@
 # Hello, Friend
-This is a free-of-charge, authorization-free LLM endpoint that complies with the OpenAI API standard.<br>
+This is a free-of-charge, authorization-free LLM endpoint that complies with the OpenAI API standard.  
 Pay us a visit on [our webpage](https://xetute.com/).<br>
 Try out PhantasiaAI [here](https://xetute.com/PhantasiaAI).
+
+> [!IMPORTANT]
+> This endpoint is currently not online. We're using the GPUs used for the GPT to train our [Intellect Series](https://huggingface.co/collections/XeTute/intellect-67a4bf16303482712925767d).
+> It'll be online 17:30 07/02/2025 (DD/MM/YYY) or sooner. Thanks for your understanding.
 
 ## Why
 At XeTute Technologies, we understand the challenges of serving high-quality, fast LLM-powered applications with limited resources. When we were a smaller company, this was especially difficult.
@@ -10,7 +14,6 @@ To address this, we are introducing this endpoint, available at **http://ai.xetu
 
 ## Privacy
 Your inputs, and those of your users, are never logged, saved, or monitored by us. This ensures that no one, including ourselves, can access your prompts or the model's generations.
-
 If you wish to save inputs and outputs, you must implement that functionality yourself in your application.
 
 ## License
