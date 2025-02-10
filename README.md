@@ -1,6 +1,6 @@
 # Hello, Friend
 This is a free-of-charge, authorization-free LLM endpoint that complies with the OpenAI API standard.  
-Pay us a visit on [our webpage](https://xetute.com/).<br>
+Pay us a visit on [our webpage](https://xetute.com/).  
 Try out PhantasiaAI [here](https://xetute.com/PhantasiaAI).
 
 > [!TIP]
@@ -16,8 +16,8 @@ Your inputs, and those of your users, are never logged, saved, or monitored by u
 If you wish to save inputs and outputs, you must implement that functionality yourself in your application.
 
 ## License
-The model being served is often changes, but you can retrieve it throught the API: "https://ai.xetute.com/api/v1/model".  
-The used model is **always** licensed under either **Apache 2.0** or **MIT**. The Quantization level can also be red from the name responded by the API.  
+The model being served often changes, but you can retrieve it throught the API: "https://ai.xetute.com/api/v1/model".  
+The used model is **always** licensed under either **Apache 2.0** or **MIT**. The quantization level can also be read from the name returned by the API.  
 
 All generations from the model belong to you. If you are serving the model through your application, the ownership of generations can be decided by you or your users.
 
