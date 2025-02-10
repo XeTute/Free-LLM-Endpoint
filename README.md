@@ -16,15 +16,13 @@ Your inputs, and those of your users, are never logged, saved, or monitored by u
 If you wish to save inputs and outputs, you must implement that functionality yourself in your application.
 
 ## License
-The model being served is **[Roleplay-Hermes-3-Llama-3.1-8B](https://huggingface.co/vicgalle/Roleplay-Hermes-3-Llama-3.1-8B)**, licensed under **Apache 2.0**. It is an efficient, production-ready LLM optimized using INT4 / iQ4 compression. While the model has been adapted for fast inference and resource efficiency, it retains high-quality performance for various applications.
+The model being served is often changes, but you can retrieve it throught the API: "https://ai.xetute.com/api/v1/model".  
+The used model is **always** licensed under either **Apache 2.0** or **MIT**. The Quantization level can also be red from the name responded by the API.  
 
 All generations from the model belong to you. If you are serving the model through your application, the ownership of generations can be decided by you or your users.
 
 ## Capabilities
-Our current endpoint supports a context length of up to **8,192 tokens** (8k). Inputs are queued if requests are already being processed, which may affect generation times.
-
-- For a full context window and 100 tokens generated, the average processing time is around **5 seconds** (if no other requests are queued).
-- The maximum recorded processing time remains well under **20 seconds**.
+Mostly, a minimum of context length 8192  / 8k tokens is used, but this can be higher too. The minimum TPS(tokens per second) while generation recorded was 8TPS.
 
 ## Endpoints
 The model is hosted using **KoboldCPP**, which also offers a WebUI for interactive usage. You can use the following endpoints:
@@ -40,5 +38,6 @@ Check out our roleplaying Webapplication **[PhantasiaAI](https://xetute.com/Phan
 
 ---
 
+## Faith, Unity, Discipline (and Chai)
 Long live the Islamic Federal Republic of Pakistan.  
 Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
