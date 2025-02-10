@@ -4,7 +4,7 @@ Pay us a visit on [our webpage](https://xetute.com/).
 Try out PhantasiaAI [here](https://xetute.com/PhantasiaAI).
 
 > [!TIP]
-> The Endpoint is offline. If it's reachable, you will see it here.
+> The Endpoint is online. If it's unreachable, you will see it here.
 
 ## Why
 At XeTute Technologies, we understand the challenges of serving high-quality, fast LLM-powered applications with limited resources. When we were a smaller company, this was especially difficult.
