@@ -38,6 +38,6 @@ Check out our roleplaying Webapplication **[PhantasiaAI](https://xetute.com/Phan
 
 ---
 
-## Faith, Unity, Discipline (and Chai)
+## Faith, Unity, Discipline (and Chai) | Serve the People
 Long live the Islamic Federal Republic of Pakistan.  
 Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
