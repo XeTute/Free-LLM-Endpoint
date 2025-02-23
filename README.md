@@ -33,7 +33,7 @@ The model is hosted using **KoboldCPP**, which also offers a WebUI for interacti
 
 ## Support
 You can support us by spreading the word about our service, using it in your projects, or supporting us on **[Ko-Fi](https://ko-fi.com/xetute)**.<br>
-Check out our roleplaying Webapplication **[PhantasiaAI](https://xetute.com/PhantasiaAI)** to support our mission.
+Check out our Webapplication **[here](https://xetute.com/)** to support our mission.
 
 ---
 
