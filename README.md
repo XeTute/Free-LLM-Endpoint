@@ -1,7 +1,6 @@
 # Hello, Friend
 This is a free-of-charge, authorization-free LLM endpoint that complies with the OpenAI API standard.  
 Pay us a visit on [our webpage](https://xetute.com/).  
-Try out PhantasiaAI [here](https://xetute.com/PhantasiaAI).
 
 > [!TIP]
 > The Endpoint is online. If it's unreachable, you will see it here.
