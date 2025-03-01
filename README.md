@@ -3,7 +3,7 @@ This is a free-of-charge, authorization-free LLM endpoint that complies with the
 Pay us a visit on [our webpage](https://xetute.com/).  
 
 > [!TIP]
-> The Endpoint is offline. If it's reachable, you will see it here.  
+> The Endpoint is online. If it's unreachable, you will see it here.  
 > If the Endpoint is offline, we're most likely training a Language Model, which you can always find Open-Sourced on [HuggingFace 🤗](https://huggingface.co/XeTute).
 
 ## Why
