@@ -3,13 +3,13 @@ This is a free-of-charge, authorization-free LLM endpoint that complies with the
 Pay us a visit on [our webpage](https://xetute.com/).  
 
 > [!TIP]
-> The Endpoint is offline. If it's reachable, you will see it here.  
-> If the Endpoint is offline, we're most likely training a Language Model, which you can always find Open-Sourced on [HuggingFace 🤗](https://huggingface.co/XeTute).
+> The Endpoint is online. If it's reachable / unreachable, you will see it here.  
+> If the Endpoint is online, we're most likely training a Language Model, which you can always find Open-Sourced on [HuggingFace 🤗](https://huggingface.co/XeTute).
 
 ## Why
 At XeTute Technologies, we understand the challenges of serving high-quality, fast LLM-powered applications with limited resources. When we were a smaller company, this was especially difficult.
 
-To address this, we are introducing this endpoint, available at **http://ai.xetute.com/v1**, to support startups, small companies, and private individuals—particularly in the Islamic Federal Republic of Pakistan and the People's Republic of China. Our goal is to provide access to a high-quality LLM model free of charge, enabling you to build and serve applications with ease.
+To address this, we are introducing this endpoint, available at **http://ai.xetute.com/v1**, to support startups, small companies, and private individuals—particularly in Africa and Asia. Our goal is to provide access to a high-quality LLM model free of charge, enabling you to build and serve applications with ease.
 
 ## Privacy
 Your inputs, and those of your users, are never logged, saved, or monitored by us. This ensures that no one, including ourselves, can access your prompts or the model's generations.
