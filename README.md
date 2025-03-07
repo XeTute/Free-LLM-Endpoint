@@ -4,7 +4,7 @@ You can find a full version of this [here](https://ai.xetute.com/api). The 'k' i
 
 ## JS Examples
 
-Test if the endpoint is up & retrieve the current model in use:
+Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +20,7 @@ Test if the endpoint is up & retrieve the current model in use:
     const text = document.getElementById('text');
     async function getmodel()
     {
+      text.textContent = "Loading...";
       let name = "";
       try
       {
@@ -37,7 +38,7 @@ Test if the endpoint is up & retrieve the current model in use:
 </script>
 ```
 
-Generate a chat-completion (without streaming):
+Generate a chat-completion (without streaming): [Run](https://codepen.io/XeTute/pen/YPzQREW)
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
