@@ -1,43 +1,29 @@
-# Hello, Friend
-This is a free-of-charge, authorization-free LLM endpoint that complies with the OpenAI API standard.  
-Pay us a visit on [our webpage](https://xetute.com/).  
+# OpenAI-Compatible LLM Endpoint
+This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.  
+You can find a full version of this [here](https://ai.xetute.com/api). The 'k' in "{number}k" refers to 1024, not 1000.
 
-> [!TIP]
-> The Endpoint is online. If it's reachable / unreachable, you will see it here.  
-> If the Endpoint is online, we're most likely training a Language Model, which you can always find Open-Sourced on [HuggingFace 🤗](https://huggingface.co/XeTute).
+## "Paths"
+- KoboldCPP:
+  - WebUI: `https://ai.xetute.com/`
+  - Model currently in use: `https://ai.xetute.com/api/v1/model`
+- OpenAI-Compatible: `https://ai.xetute.com/v1`
+  - Chat-Completions: `https://ai.xetute.com/v1/chat/completions`:
+    - Any API key will work
+      Example:
+      ```JSON
+      [  { "role": "system", "content": "insert system prompt here" }, { "role": "user", "content": "insert user input here" } ]
+      ```
 
-## Why
-At XeTute Technologies, we understand the challenges of serving high-quality, fast LLM-powered applications with limited resources. When we were a smaller company, this was especially difficult.
+## Compute
+This section is not updated too frequently. You can always expect a minimum context length of 4k tokens. For 
+Current limits:
 
-To address this, we are introducing this endpoint, available at **http://ai.xetute.com/v1**, to support startups, small companies, and private individuals—particularly in Africa and Asia. Our goal is to provide access to a high-quality LLM model free of charge, enabling you to build and serve applications with ease.
-
-## Privacy
-Your inputs, and those of your users, are never logged, saved, or monitored by us. This ensures that no one, including ourselves, can access your prompts or the model's generations.
-If you wish to save inputs and outputs, you must implement that functionality yourself in your application.
-
-## License
-The model being served often changes, but you can retrieve it throught the API: "https://ai.xetute.com/api/v1/model".  
-The used model is **always** licensed under either **Apache 2.0** or **MIT**. The quantization level can also be read from the name returned by the API.  
-
-All generations from the model belong to you. If you are serving the model through your application, the ownership of generations can be decided by you or your users.
-
-## Capabilities
-Mostly, a minimum of context length 8192  / 8k tokens is used, but this can be higher too. The minimum TPS(tokens per second) while generation recorded was 8TPS.
-
-## Endpoints
-The model is hosted using **KoboldCPP**, which also offers a WebUI for interactive usage. You can use the following endpoints:
-
-- **WebUI:** https://ai.xetute.com/
-- **KoboldAI-Compatible Endpoint:** https://ai.xetute.com/api/
-- **OpenAI-Compatible Endpoint:** https://ai.xetute.com/v1/  
-  *(Most Common: https://ai.xetute.com/v1/chat/completions)*
-
-## Support
-You can support us by spreading the word about our service, using it in your projects, or supporting us on **[Ko-Fi](https://ko-fi.com/xetute)**.<br>
-Check out our Webapplication **[here](https://xetute.com/)** to support our mission.
+- Context Length: 16k
+- Processing time (in seconds) for ctx above: ~35s
 
 ---
+# Our Apps & Socials
+[Chat with our Assistant](https://xetute.com/) | [Support us Financially](https://ko-fi.com/XeTute) | [Visit our GitHub](https://github.com/XeTute)  
 
-## Faith, Unity, Discipline (and Chai) | Serve the People
-Long live the Islamic Federal Republic of Pakistan.  
-Long live our alliance with the People's Republic of China, and long live the People's Republic of China.
+Long live the Islamic Republic of Pakistan; Glory to the Islamic Republic of Pakistan 🇵🇰  
+![The Flag of the Islamic Federal Republic of Pakistan](https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg)
