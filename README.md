@@ -43,7 +43,7 @@ Generate a chat-completion (without streaming):
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Fetch Model Name</title>
+        <title>Generate Completion</title>
     </head>
     <body>
         <div style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: center; align-items: center;">
