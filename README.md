@@ -2,17 +2,98 @@
 This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.  
 You can find a full version of this [here](https://ai.xetute.com/api). The 'k' in "{number}k" refers to 1024, not 1000.
 
-## "Paths"
-- KoboldCPP:
-  - WebUI: `https://ai.xetute.com/`
-  - Model currently in use: `https://ai.xetute.com/api/v1/model`
-- OpenAI-Compatible: `https://ai.xetute.com/v1`
-  - Chat-Completions: `https://ai.xetute.com/v1/chat/completions`:
-    - Any API key will work
-      Example:
-      ```JSON
-      [  { "role": "system", "content": "insert system prompt here" }, { "role": "user", "content": "insert user input here" } ]
-      ```
+## JS Examples
+
+Test if the endpoint is up & retrieve the current model in use:
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fetch Model Name</title>
+    </head>
+    <body>
+        <h1 id="text"></h1>
+    </body>
+</html>
+<script>
+    const text = document.getElementById('text');
+    async function getmodel()
+    {
+      let name = "";
+      try
+      {
+        const response = await fetch("https://ai.xetute.com/api/v1/model");
+        name = (await response.json()).result.split("koboldcpp/")[1];
+      }
+      catch (e)
+      {
+        console.error("Error fetching Model: ", e);
+        name = "Endpoint offline";
+      }
+      text.textContent = name;
+    }
+    getmodel();
+</script>
+```
+
+Generate a chat-completion (without streaming):
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fetch Model Name</title>
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: center; align-items: center;">
+            <p id="text"></p>
+            <div style="display: flex; flex-direction: row;">
+                <input placeholder="Send a message" id="input">
+                <button onclick="sendmessage()">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    const text = document.getElementById('text');
+    const input = document.getElementById('input');
+    const system_prompt = "You are a helpful AI assistant. Answer as short as possible.";
+
+    let processing = false;
+    async function sendmessage()
+    {
+        input.value = input.value.trim();
+        if (processing || (!input.value)) { return; }
+        processing = true;
+        text.textContent = "Loading...";
+        const messages =
+        [
+            { "role": "system", "content": system_prompt },
+            { "role": "user",   "content": input.value   }
+        ];
+        try
+        {
+            let response = await fetch
+            (
+                "https://ai.xetute.com/v1/chat/completions",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json", "Authorization": "Bearer 0" }, 
+                    body: JSON.stringify({ messages: messages, stream: false, temperature: 0.5, max_tokens: 512 })
+                }
+            );
+            response = (await response.json()).choices[0].message.content;
+            if (response.lastIndexOf("</think>") !== -1) { response = response.substring(response.lastIndexOf("</think>") + "</think>".length, response.length - 1); }
+            text.textContent = response.trim();
+        }
+        catch (e) { text.textContent = "Failed. See console."; console.error(e); }
+        processing = false;
+    }
+</script>
+```
+
+**You can always find a production-ready webpage using this endpoint on [our webpage](https://xetute.com/).**
 
 ## Compute
 This section is not updated too frequently. You can always expect a minimum context length of 4k tokens. For 
