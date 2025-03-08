@@ -101,7 +101,7 @@ This section is not updated too frequently. You can always expect a minimum cont
 Current limits:
 
 - Context Length: 16k
-- Processing time (in seconds) for ctx above: ~35s
+- Processing time (in seconds) for ctx: ~35
 
 ---
 # Our Apps & Socials
