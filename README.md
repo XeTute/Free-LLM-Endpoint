@@ -2,7 +2,7 @@
 This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.  
 You can find a full version of this [here](https://ai.xetute.com/api). The 'k' in "{number}k" refers to 1024, not 1000.
 
-## JS Examples
+## JS (& HTML) Examples
 
 Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
 ```HTML
