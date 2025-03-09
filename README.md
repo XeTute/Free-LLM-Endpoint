@@ -1,9 +1,31 @@
-# OpenAI-Compatible LLM Endpoint
-This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.  
-You can find a full version of this [here](https://ai.xetute.com/api). The 'k' in "{number}k" refers to 1024, not 1000.
+<div align="center">
+<span style="font-family: default; font-size: 1.5em;">Fully Free LLM Endpoint</span>
+<div>
+This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
+</div>
+</div>
+<br>
+<div align="center" style="line-height: 1;">
+  <a href="https://huggingface.co/XeTute" style="margin: 2px;">
+    <img alt="Code" src="https://img.shields.io/badge/XeTute-000000?style=for-the-badge&logo=huggingface" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://ko-fi.com/XeTute" style="margin: 2px;">
+    <img alt="Ko-Fi" src="https://img.shields.io/badge/Buy_us_a_coffe-000000?style=for-the-badge&logo=kofi&logoColor=000&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://xetute.com/" style="margin: 2px;">
+    <img alt="Ko-Fi" src="https://img.shields.io/badge/Webpage-000000?style=for-the-badge&logo=githubpages" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://bsky.app/profile/xetute.bsky.social" style="margin: 2px;">
+    <img alt="Ko-Fi" src="https://img.shields.io/badge/BlueSky-000000?style=for-the-badge&logo=bluesky" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+</div>
+</div>
+</div>
+
+> [!IMPORTANT]
+> This Endpoint is going to be offline from (DD/MM/YYYY) 08/03/2025 to 08/04/2025. This is because we're training a LM, which will be, as usual, open-source under a permissive license on [our HuggingFace](https://huggingface.co/XeTute).
 
 ## JS (& HTML) Examples
-
 Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
 ```HTML
 <!DOCTYPE html>
