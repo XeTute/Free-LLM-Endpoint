@@ -119,8 +119,8 @@ Generate a chat-completion (without streaming): [Run](https://codepen.io/XeTute/
 **You can always find a production-ready webpage using this endpoint on [our webpage](https://xetute.com/).**
 
 ## Compute
-This section is not updated too frequently. You can always expect a minimum context length of 4k tokens. For 
-Current limits:
+This section is not updated too frequently. You can always expect a minimum context length of 4k tokens.
+Latest limits:  
 
 - Context Length: 16k
 - Processing time (in seconds) for ctx: ~35
