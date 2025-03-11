@@ -23,7 +23,7 @@ This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
 </div>
 
 > [!IMPORTANT]
-> This endpoint will be offline due to "Medical-1B" being trained on our GPU. We're expecting it to be back online at latest (DD/MM/YYYY) 20/03/2025.
+> This endpoint will be offline due to "Medic-1B" being trained on our GPU. We're expecting it to be back online at latest (DD/MM/YYYY) 20/03/2025.
 
 ## JS (& HTML) Examples
 Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
