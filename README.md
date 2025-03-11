@@ -22,9 +22,6 @@ This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
 </div>
 </div>
 
-> [!IMPORTANT]
-> This Endpoint is going to be offline from (DD/MM/YYYY) 08/03/2025 to 08/04/2025. This is because we're training a LM, which will be, as usual, open-source under a permissive license on [our HuggingFace](https://huggingface.co/XeTute).
-
 ## JS (& HTML) Examples
 Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
 ```HTML
