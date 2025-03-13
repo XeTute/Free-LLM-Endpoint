@@ -25,7 +25,7 @@ This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
 > [!IMPORTANT]
 > This endpoint will be offline due to "Medic-1B" being trained on our GPU. We're expecting it to be back online at latest (DD/MM/YYYY) 20/03/2025.
 
-> [!NOTICE]
+> [!NOTE]
 > The model being served is licensed under the [Gemma license](https://ai.google.dev/gemma/terms); it's Gemma-3-4B as of now. A slow (testing) endpoint will be online as soon as KoboldCPP has a release with Gemma3 llama.cpp support.
 
 ## JS (& HTML) Examples
