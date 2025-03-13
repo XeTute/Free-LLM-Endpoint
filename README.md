@@ -1,7 +1,8 @@
 <div align="center">
 <span style="font-family: default; font-size: 1.5em;">Fully Free LLM Endpoint</span>
 <div>
-This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
+This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.  
+Support: Image + Text => Text
 </div>
 </div>
 <br>
