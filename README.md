@@ -1,8 +1,7 @@
 <div align="center">
 <span style="font-family: default; font-size: 1.5em;">Fully Free LLM Endpoint</span>
 <div>
-This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.<br>
-Support: Image + Text => Text
+This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
 </div>
 </div>
 <br>
@@ -22,12 +21,6 @@ Support: Image + Text => Text
 </div>
 </div>
 </div>
-
-> [!IMPORTANT]
-> This endpoint will be offline due to "Medic-1B" being trained on our GPU. We're expecting it to be back online at latest (DD/MM/YYYY) 20/03/2025.
-
-> [!NOTE]
-> The model being served is licensed under the [Gemma license](https://ai.google.dev/gemma/terms); it's Gemma-3-4B as of now. A slow (testing) endpoint will be online as soon as KoboldCPP has a release with Gemma3 llama.cpp support.
 
 ## JS (& HTML) Examples
 Test if the endpoint is up & retrieve the current model in use: [Run](https://codepen.io/XeTute/pen/gbORQGW)
