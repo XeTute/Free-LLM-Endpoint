@@ -117,10 +117,12 @@ Generate a chat-completion (without streaming): [Run](https://codepen.io/XeTute/
 
 ## Compute
 This section is not updated too frequently. You can always expect a minimum context length of 4k tokens.
-Latest limits:  
+Latest data:  
 
-- Context Length: 16k
-- Processing time (in seconds) for ctx: ~35
+- Model Size: 1.2B
+- Model HF Name: XeTute/HamzahLMV0-1B
+- Context Length: 128k
+- Processing time (in seconds) for ctx: ~84
 
 ---
 # Our Apps & Socials
