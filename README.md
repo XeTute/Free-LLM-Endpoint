@@ -115,14 +115,8 @@ Generate a chat-completion (without streaming): [Run](https://codepen.io/XeTute/
 
 **You can always find a production-ready webpage using this endpoint on [our webpage](https://xetute.com/).**
 
-## Compute
-This section is not updated too frequently. You can always expect a minimum context length of 4k tokens.
-Latest data:  
-
-- Model Size: 1.2B
-- Model HF Name: XeTute/HamzahLMV1-1B
-- Context Length: 128k
-- Processing time (in seconds) for ctx: ~90
+## Compute & Notes
+We don't guarantee this endpoint to be online all the time. We run small models finetuned / trained ourselves on a RTX4060 8GB with batch sizes and context lengths tweaked so that all of the model's supported context length can be processed in a reasonable time while fitting inside the 8GB VRAM, which means that CUDA unified VRAM isn't used due to performance problems.
 
 ---
 # Our Apps & Socials
