@@ -113,8 +113,6 @@ Generate a chat-completion (without streaming): [Run](https://codepen.io/XeTute/
 </script>
 ```
 
-**You can always find a production-ready webpage using this endpoint on [our webpage](https://xetute.com/).**
-
 ## Compute & Notes
 We don't guarantee this endpoint to be online all the time. We run small models finetuned / trained ourselves on a RTX4060 8GB with batch sizes and context lengths tweaked so that all of the model's supported context length can be processed in a reasonable time while fitting inside the 8GB VRAM, which means that CUDA unified VRAM isn't used due to performance problems.
 
