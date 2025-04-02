@@ -15,9 +15,6 @@ This Repository "documents" our OpenAI & KoboldAI-Compatible LLM endpoint.
   <a href="https://xetute.com/" style="margin: 2px;">
     <img alt="Ko-Fi" src="https://img.shields.io/badge/Webpage-000000?style=for-the-badge&logo=githubpages" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://bsky.app/profile/xetute.bsky.social" style="margin: 2px;">
-    <img alt="Ko-Fi" src="https://img.shields.io/badge/BlueSky-000000?style=for-the-badge&logo=bluesky" style="display: inline-block; vertical-align: middle;"/>
-  </a>
 </div>
 </div>
 </div>
